@@ -13,8 +13,7 @@ export function Hero() {
   };
 
   return (
-    <section id='hero' className="relative min-h-160 flex items-center pt-20">
-      link
+    <section className="relative min-h-160 flex items-center pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 opacity-">
         <img 
@@ -22,11 +21,11 @@ export function Hero() {
           alt="Solar panels background" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/50" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center w-full">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center w-full">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl mb-6 leading-tight">
           <span className="text-[#333] font-bold">Revolutionizing </span>
@@ -43,15 +42,15 @@ export function Hero() {
         <div className="flex flex-wrap justify-center gap-20 mb-10">
           <div className="text-center">
             <div className="text-3xl font-bold text-[#253865] mb-1">100+</div>
-            <div className="text-sm text-[#666] font-medium">Projects Delivered</div>
+            <div className="text-sm text-[#333] font-medium">Projects Delivered</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-[#253865] mb-1">100%</div>
-            <div className="text-sm text-[#666] font-medium">Client Satisfaction</div>
+            <div className="text-sm text-[#333] font-medium">Client Satisfaction</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-[#253865] mb-1">24/7</div>
-            <div className="text-sm text-[#666] font-medium">Support Available</div>
+            <div className="text-sm text-[#333] font-medium">Support Available</div>
           </div>
         </div>
 
