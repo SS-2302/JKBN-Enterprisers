@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, Phone, Zap } from 'lucide-react';
 export function DealsSection() {
   const cardsToShow = 4; // Show 4 cards at a time
   const cardWidth = 285; // 265px card + 20px gap
-  const autoScrollInterval = 1000; // Auto-scroll every 3 seconds
+  const autoScrollInterval = 2000; // Auto-scroll every 3 seconds
   const startIndex = deals.length; // Start from the middle set
   
   const [currentIndex, setCurrentIndex] = useState(startIndex);
@@ -23,11 +23,12 @@ export function DealsSection() {
   // Auto-scroll effect
   useEffect(() => {
     const timer = setInterval(() => {
-      handleNext();
-    }, autoScrollInterval);
+    setCurrentIndex((prev) => prev + 1);
+    setIsTransitioning(true);
+  }, autoScrollInterval);
 
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, []);
 
   const handlePrevious = () => {
     if (isTransitioning) return;

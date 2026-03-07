@@ -6,6 +6,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
   const navigate=useNavigate()
 
+  const handleHome = () => {
+    navigate('/');
+  };
   const handleAboutUs = () => {
     navigate('/about');
   };
@@ -47,7 +50,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm ">
               <li>
                 <button 
-                  onClick={() => scrollToSection('hero')}
+                  onClick={handleHome}
                   className="hover:text-[#6cc93e] transition-colors text-gray-300 cursor-pointer"
                 >
                   Home
