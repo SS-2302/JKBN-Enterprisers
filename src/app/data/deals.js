@@ -15,7 +15,7 @@ export const deals = [
     price: '₹4,80,000',
     originalPrice: '₹5,30,000',
     savings: '₹50,000',
-    validity: "June 20, 2026",
+    validity: "november 20, 2026",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const deals = [
     price: '₹21,29,000',
     originalPrice: '₹25,00,000',
     savings: '₹3,71,000',
-    validity: "June 20, 2026",
+    validity: "June 25, 2026",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const deals = [
     price: '₹2,40,000',
     originalPrice: '₹3,00,000',
     savings: '₹60,000',
-    validity: "June 20, 2026",
+    validity: "March 10, 2026",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const deals = [
     price: '₹3,20,000',
     originalPrice: '₹4,00,000',
     savings: '₹80,000',
-    validity: "June 20, 2026",
+    validity: "July 23, 2026",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const deals = [
     price: '₹6,50,000',
     originalPrice: '₹8,00,000',
     savings: '₹1,50,000',
-    validity: "June 20, 2026",
+    validity: "May 2, 2026",
   },
   {
     id: 8,
@@ -69,6 +69,6 @@ export const deals = [
     price: '₹4,20,000',
     originalPrice: '₹5,50,000',
     savings: '₹1,30,000',
-    validity: "June 20, 2026",
+    validity: "August 20, 2026",
   },
 ];

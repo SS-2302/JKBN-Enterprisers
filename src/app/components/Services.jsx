@@ -119,7 +119,7 @@ export function Services() {
         {/* CTA Button */}
         <div className="text-center">
           <a
-            href="/contact"
+            href="/services"
             className="inline-block px-8 py-3 bg-[#6cc93e] hover:bg-[#5ab84f] text-white font-medium rounded-lg transition-all duration-300 shadow-lg"
           >
             View All Services

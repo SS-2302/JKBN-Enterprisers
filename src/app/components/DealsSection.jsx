@@ -148,7 +148,7 @@ export function DealsSection() {
 
                     {/* Validity */}
                     <p className="text-[11px] text-[#90a1b9]">
-                      Valid till April 15, 2026
+                      {deal.validity}
                     </p>
                   </div>
                 </div>

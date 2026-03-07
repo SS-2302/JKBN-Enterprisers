@@ -153,7 +153,7 @@ export function Contact() {
           <div className="bg-[#292929] rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-[#6cc93e] mb-2">100+</div>
             <div className="text-xl text-white mb-2">Projects Delivered</div>
-            <div className="text-sm text-gray-400">Successful installations across sectors</div>
+            <div className="text-sm text-gray-400">Successful installations across Chennai</div>
           </div>
         </div>
       </div>

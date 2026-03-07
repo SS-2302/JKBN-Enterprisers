@@ -3,13 +3,19 @@ import { ArrowRight, Loader2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { fetchGoogleDriveImages } from '../data/googleDrive';
 import { ImageWithFallback } from './ImagewithFallback';
-
+import { useNavigate } from 'react-router-dom';
 
 
 export function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const navigate=useNavigate()
+
+  const handleProjects = () => {
+    navigate('/projects');
+  };
 
   useEffect(() => {
     async function loadProjects() {
@@ -38,7 +44,8 @@ export function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#333] mb-4">
-            Our <span className="text-[#6cc93e] font-bold">Recent Projects</span>
+            <span className="text-[#333333] font-bold">Our </span>
+            <span className="text-[#6cc93e] font-bold">Recent Projects</span>
           </h2>
           <p className="text-lg text-[rgba(51,51,51,0.7)] max-w-2xl mx-auto">
             Powering homes and businesses across India with reliable solar solutions
@@ -68,7 +75,7 @@ export function Projects() {
                   key={project.id}
                   className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200"
                 >
-                  <div className="relative h-48 overflow-hidden bg-gray-100">
+                  <div className="relative h-48 overflow-hidden bg-gray-100" onClick={handleProjects}>
                     <ImageWithFallback
                       src={project.thumbnail}
                       alt={project.title}

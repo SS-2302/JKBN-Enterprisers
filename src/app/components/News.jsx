@@ -81,18 +81,18 @@ export function News() {
   }
 
   return (
-    <section id="news" className="py-20 bg-white">
+    <section id="news" className="py-20 bg-linear-to-br from-[#273a69] via-[#15203b] to-[#060a12]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <TrendingUp className="w-8 h-8 text-[#6cc93e]" />
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#333]">
-              <span className="text-[#333333] font-bold">Latest </span>
+              <span className="text-[#fecd3f] font-bold">Latest </span>
               <span className="text-[#6cc93e] font-bold">Solar News</span>
             </h2>
           </div>
-          <p className="text-lg text-[rgba(51,51,51,0.7)] max-w-2xl mx-auto mb-6 font-medium">
+          <p className="text-lg text-gray-300 max-w-5xl mx-auto mb-6 font-normal">
             Stay updated with the latest innovations, breakthroughs, and developments in solar energy from around the world
           </p>
           
@@ -100,13 +100,13 @@ export function News() {
           <button
             onClick={handleRefresh}
             disabled={refreshing}
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:text-[#6cc93e] transition-colors duration-300 disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#fecd3f]/30 rounded-full font-semibold text-sm text-gray-200 hover:text-[#6cc93e] transition-colors duration-300 disabled:opacity-50 cursor-pointer"
           >
             <RefreshCw className={`w-4 h-4 ${refreshing ? 'animate-spin' : ''}`} />
             {refreshing ? 'Refreshing...' : 'Refresh News'}
           </button>
           
-          <p className="text-xs text-gray-500 mt-2">
+          <p className="text-xs text-yellow-600 mt-2">
             ⚡ Automatically updates weekly
           </p>
         </div>
@@ -178,16 +178,16 @@ export function News() {
         </div>
 
         {/* Info Section */}
-        <div className="bg-gray-50 rounded-xl p-8 shadow-lg text-center border border-gray-200">
-          <h3 className="text-xl text-[#333] mb-3 font-semibold">
+        <div className="bg-gray-50/20 rounded-xl p-5 shadow-lg text-center border border-gray-200">
+          <h3 className="text-xl text-[#6cc93e] mb-4 font-semibold">
             Stay Informed About Solar Industry Trends
           </h3>
-          <p className="text-[rgba(51,51,51,0.7)] max-w-5xl mx-auto">
+          <p className="text-[rgba(255,255,255,0.7)] max-w-5xl mx-auto">
             Our news section is powered by real-time data from leading energy publications worldwide. 
             Articles are automatically curated and updated weekly to bring you the most relevant developments 
             in solar technology, market trends, policy changes, and innovative breakthroughs.
           </p>
-          <p className="text-sm text-gray-500 mt-4">
+          {/* <p className="text-sm text-gray-500 mt-4">
             <strong>Note:</strong> To enable live news updates, add your NewsAPI key in the newsService.ts file. 
             <a 
               href="https://newsapi.org/" 
@@ -197,7 +197,7 @@ export function News() {
             >
               Get your free API key here →
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
