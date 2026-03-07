@@ -68,7 +68,7 @@ export function DealsSection() {
         background: 'linear-gradient(113.177deg, rgba(209, 213, 220, 0.1) 0%, rgba(51, 51, 51, 0.1) 99.662%)',
       }}
     >
-      <div className="max-w-[350] px-4 sm:px-6 lg:px-8">
+      <div className="max-w-337.5 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center gap-2 mb-4 bg-[rgba(108,201,62,0.1)] px-4 py-2 rounded-full">
