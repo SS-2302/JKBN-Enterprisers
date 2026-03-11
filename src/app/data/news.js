@@ -44,9 +44,7 @@ async function fetchNewsFromAPI() {
     const query = "solar energy OR solar power OR renewable energy";
     const max = 12;
 
-    const response = await fetch(
-      `${NEWS_API_URL}?q=${encodeURIComponent(query)}&lang=en&max=${max}&apikey=${NEWS_API_KEY}`
-    );
+    const response = await fetch("/.netlify/functions/news");
 
     if (!response.ok) {
       console.error("GNews HTTP Error:", response.status);
