@@ -1,8 +1,8 @@
 // News API Service for Solar Energy News
 // This service fetches the latest news about solar energy from NewsAPI
 
-const NEWS_API_KEY = "28d33acd92f44716981d20311303e163"; // Replace with your NewsAPI key
-const NEWS_API_URL = "https://newsapi.org/v2/everything";
+const NEWS_API_KEY = import.meta.env.VITE_GNEWS_API_KEY;
+const NEWS_API_URL = "https://gnews.io/api/v4/search";
 
 // Cache keys
 const CACHE_KEY = "solar_news_cache";
@@ -41,22 +41,24 @@ function cacheNews(articles) {
 // Fetch news from API
 async function fetchNewsFromAPI() {
   try {
-    const query =
-      "solar energy OR solar power OR photovoltaic OR renewable energy";
-    const sortBy = "publishedAt";
-    const pageSize = 12;
+    const query = "solar energy OR solar power OR renewable energy";
+    const max = 12;
 
     const response = await fetch(
-      `${NEWS_API_URL}?q=${encodeURIComponent(
-        query
-      )}&sortBy=${sortBy}&pageSize=${pageSize}&language=en&apiKey=${NEWS_API_KEY}`
+      `${NEWS_API_URL}?q=${encodeURIComponent(query)}&lang=en&max=${max}&apikey=${NEWS_API_KEY}`
     );
 
     if (!response.ok) {
-      throw new Error("Failed to fetch news");
+      console.error("GNews HTTP Error:", response.status);
+      return getMockNews();
     }
 
     const data = await response.json();
+
+    if (!data || !Array.isArray(data.articles)) {
+      console.error("Invalid GNews response:", data);
+      return getMockNews();
+    }
 
     const articles = data.articles.map((article, index) => ({
       id: `${article.publishedAt}-${index}`,
@@ -66,7 +68,7 @@ async function fetchNewsFromAPI() {
         "Read more about this solar energy development...",
       url: article.url,
       urlToImage:
-        article.urlToImage ||
+        article.image ||
         "https://images.unsplash.com/photo-1509391366360-2e959784a276",
       publishedAt: article.publishedAt,
       source: {
@@ -79,8 +81,8 @@ async function fetchNewsFromAPI() {
 
     return articles;
   } catch (error) {
-    console.error("Error fetching news:", error);
-    return getMockNews(); // fallback
+    console.error("Error fetching GNews:", error);
+    return getMockNews();
   }
 }
 
