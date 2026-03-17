@@ -13,21 +13,15 @@ export function ContactPage(){
 }
 
 // import { Link } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
 // import { Mail, Phone, MapPin, Clock, ArrowRight, Calendar, Check, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+// // import imgSolarPanel from "../../assets/solar panel.png";
 
 // export function ContactPage() {
-
-//     const navigate=useNavigate()
-
-//     const handleGetConsultation = () => {
-//     navigate('/consultation');
-//   };
-
 //   return (
-//     <div className="min-h-screen bg-white">
+//     <div className="min-h-screen bg-white relative overflow-hidden">
+
 //       {/* Hero Section */}
-//       <section className="relative py-20 px-4 overflow-hidden bg-linear-to-br from-gray-50 to-white">
+//       <section className="relative py-20 px-4 bg-linear-to-br from-gray-50 to-white z-10 mt-15">
 //         {/* Background Decorative Elements */}
 //         <div className="absolute inset-0 opacity-5 pointer-events-none">
 //           <div className="absolute top-10 left-10 w-64 h-64 bg-[#6cc93e] rounded-full blur-3xl"></div>
@@ -36,7 +30,7 @@ export function ContactPage(){
 
 //         <div className="max-w-7xl mx-auto relative z-10">
 //           {/* Contact Us Badge */}
-//           <div className="flex justify-center mb-10 mt-12">
+//           <div className="flex justify-center mb-6">
 //             <span className="inline-flex items-center px-6 py-2 bg-[rgba(108,201,62,0.1)] text-[#6cc93e] rounded-full text-sm font-semibold">
 //               Contact Us
 //             </span>
@@ -48,18 +42,18 @@ export function ContactPage(){
 //           </h1>
           
 //           <p className="text-lg sm:text-xl text-center text-[rgba(51,51,51,0.8)] max-w-4xl mx-auto mb-12">
-//             Speak with our solar experts and take the first step towards clean, affordable, and reliable <span className="text-[#6cc93e]">energy solutions</span>.
+//             Speak with our solar experts and take the first step towards clean, affordable, and reliable <br /><span className="text-[#6cc93e]">energy solutions</span>.
 //           </p>
 
 //           {/* Stats/Features */}
-//           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto font-semibold">
+//           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
 //             {[
 //               { value: '<2hrs', label: 'Response Time' },
 //               { value: '100%', label: 'Client Satisfaction' },
 //               { value: '24/7', label: 'Support Available' },
 //               { value: 'Free', label: 'Consultation' },
 //             ].map((stat, idx) => (
-//               <div key={idx} className="text-center">
+//               <div key={idx} className="text-center bg-gray-100 rounded-2xl h-18 items-center border">
 //                 <div className="text-3xl font-bold text-[#6cc93e] mb-2">{stat.value}</div>
 //                 <div className="text-sm text-[rgba(51,51,51,0.7)]">{stat.label}</div>
 //               </div>
@@ -73,7 +67,7 @@ export function ContactPage(){
 //         <div className="max-w-7xl mx-auto">
 //           <div className="grid md:grid-cols-3 gap-6">
 //             {/* Email Us */}
-//             <div className="bg-[rgba(236,236,236,0.89)] border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
+//             <div className="bg-gray-100 border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
 //               <div className="flex justify-center mb-6">
 //                 <div className="bg-[#6cc93e] rounded-2xl p-6">
 //                   <Mail className="w-12 h-12 text-white" />
@@ -93,10 +87,10 @@ export function ContactPage(){
 //             </div>
 
 //             {/* Call Us */}
-//             <div className="bg-[rgba(236,236,236,0.89)] border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
+//             <div className="bg-gray-100 border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
 //               <div className="flex justify-center mb-6">
 //                 <div className="bg-[#fecd3f] rounded-2xl p-6">
-//                   <Phone className="w-12 h-12 text-black" />
+//                   <Phone className="w-12 h-12 text-[#333]" />
 //                 </div>
 //               </div>
 //               <h3 className="text-xl font-bold text-black mb-2 text-center">Call Us</h3>
@@ -113,7 +107,7 @@ export function ContactPage(){
 //             </div>
 
 //             {/* WhatsApp Us */}
-//             <div className="bg-[rgba(236,236,236,0.8)] border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
+//             <div className="bg-gray-100 border border-[rgba(0,0,0,0.2)] rounded-3xl p-8">
 //               <div className="flex justify-center mb-6">
 //                 <div className="bg-[#6cc93e] rounded-2xl p-6">
 //                   <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -142,21 +136,21 @@ export function ContactPage(){
 //       {/* Schedule a Call Section */}
 //       <section className="py-16 px-4 bg-gray-50">
 //         <div className="max-w-7xl mx-auto">
-//           <div className="bg-[rgba(236,236,236,0.9)] border border-[rgba(0,0,0,0.2)] rounded-3xl p-8 lg:p-12">
+//           <div className="bg-linear-to-br from-[#273a69] via-[#15203b] to-[#060a12] border border-[rgba(0,0,0,0.2)] rounded-3xl p-8 lg:p-12">
 //             <div className="grid lg:grid-cols-2 gap-12">
 //               {/* Left Side - Info */}
 //               <div>
 //                 <div className="flex items-start gap-4 mb-6">
 //                   <div className="bg-[#fecd3f] rounded-2xl p-4">
-//                     <Calendar className="w-10 h-10 text-black" />
+//                     <Calendar className="w-10 h-10 text-[#333]" />
 //                   </div>
 //                   <div>
-//                     <h2 className="text-3xl font-bold text-black mb-2">Schedule a Call</h2>
-//                     <p className="text-lg text-black font-semibold">Free 30-minute consultation</p>
+//                     <h2 className="text-3xl font-bold text-white mb-2">Schedule a Call</h2>
+//                     <p className="text-lg text-white">Free 30-minute consultation</p>
 //                   </div>
 //                 </div>
 
-//                 <p className="text-lg text-black mb-8 leading-relaxed">
+//                 <p className="text-lg text-mist-400 mb-8 leading-relaxed">
 //                   Prefer to talk? Schedule a free 30-minute consultation call with our solar experts to discuss your energy requirements and receive personalized solar solutions.
 //                 </p>
 
@@ -170,7 +164,7 @@ export function ContactPage(){
 //                   ].map((feature, idx) => (
 //                     <div key={idx} className="flex items-start gap-3">
 //                       <Check className="w-5 h-5 text-[#6cc93e] shrink-0 mt-0.5" />
-//                       <span className="text-base text-black">{feature}</span>
+//                       <span className="text-base text-mist-400">{feature}</span>
 //                     </div>
 //                   ))}
 //                 </div>
@@ -179,28 +173,26 @@ export function ContactPage(){
 //               {/* Right Side - CTA */}
 //               <div className="flex flex-col justify-between">
 //                 <div>
-//                   <button 
-//                     onClick={handleGetConsultation}
-//                     className="w-full bg-[#6cc93e] hover:bg-[#5ab84f] text-white font-semibold py-6 px-8 rounded-2xl transition-colors flex items-center justify-center gap-3 mb-10 cursor-pointer">
+//                   <button className="w-full bg-[#6cc93e] hover:bg-[#5ab84f] text-white font-semibold py-6 px-8 rounded-2xl transition-colors flex items-center justify-center gap-3 mb-6">
 //                     <span className="text-xl">Book a Call Now</span>
 //                     <ArrowRight className="w-6 h-6" />
 //                   </button>
 
-//                   <div className="border-t border-[#333] pt-10 space-y-4">
-//                     <div className="flex items-center gap-5">
-//                       <Phone className="w-6 h-6 text-black " />
-//                       <span className="text-xl text-black font-semibold">+91 7550055300</span>
+//                   <div className=" pt-6 space-y-4 mt-12">
+//                     <div className="flex items-center gap-3">
+//                       <Phone className="w-5 h-5 text-[#fecd3f]" />
+//                       <span className="text-xl text-white font-semibold">+91 7550055300</span>
 //                     </div>
-//                     <div className="flex items-center gap-5">
-//                       <Mail className="w-6 h-6 text-black " />
-//                       <span className="text-xl text-black font-semibold">jkbnenterprisers@gmail.com</span>
+//                     <div className="flex items-center gap-3">
+//                       <Mail className="w-5 h-5 text-[#fecd3f]" />
+//                       <span className="text-xl text-white font-semibold">jkbnenterprisers@gmail.com</span>
 //                     </div>
 //                   </div>
 //                 </div>
 
-//                 <div className="mt-8">
-//                   <h3 className="text-xl font-medium text-black mb-6">Follow us on</h3>
-//                   <div className="flex gap-4">
+//                 <div className="mt-5">
+//                   <h3 className="text-xl font-medium text-gray-400 mb-6">Follow us on</h3>
+//                   <div className="flex gap-7">
 //                     {[
 //                       { icon: Facebook, link: '#' },
 //                       { icon: Twitter, link: '#' },
@@ -210,11 +202,11 @@ export function ContactPage(){
 //                       <a
 //                         key={idx}
 //                         href={social.link}
-//                         className="bg-[#9ca3af] hover:bg-[#6cc93e] rounded-full p-4 transition-colors"
+//                         className=" rounded-full  transition-colors"
 //                         target="_blank"
 //                         rel="noopener noreferrer"
 //                       >
-//                         <social.icon className="w-6 h-6 text-white" />
+//                         <social.icon className="w-6 h-6 text-white hover:text-[#6cc93e] transition-colors" />
 //                       </a>
 //                     ))}
 //                   </div>
@@ -239,25 +231,25 @@ export function ContactPage(){
 
 //           <div className="grid lg:grid-cols-3 gap-6">
 //             {/* Business Hours Card */}
-//             <div className="bg-[rgba(236,236,236,0.9)] border border-[rgba(0,0,0,0.2)] rounded-2xl p-8">
+//             <div className="bg-gray-100 border border-[rgba(0,0,0,0.2)] rounded-2xl p-8">
 //               <div className="flex items-center gap-4 mb-6">
 //                 <div className="bg-[#fecd3f] rounded-xl p-4">
-//                   <Clock className="w-8 h-8 text-white" />
+//                   <Clock className="w-8 h-8 text-[#333]" />
 //                 </div>
-//                 <h3 className="text-2xl font-bold text-black">Business Hours</h3>
+//                 <h3 className="text-2xl font-bold text-[#333]">Business Hours</h3>
 //               </div>
 
 //               <div className="space-y-3">
 //                 <div className="bg-[#fdf0f0] rounded-xl p-4 border">
-//                   <p className="text-base text-[#333] font-semibold">Monday - Friday: 10:00 AM - 10:00 PM</p>
+//                   <p className="text-base text-[#858587] font-semibold">Monday - Friday: 10:00 AM - 10:00 PM</p>
 //                 </div>
 //                 <div className="bg-[#fdf0f0] rounded-xl p-4 border">
-//                   <p className="text-base text-[#333] font-semibold">Saturday: 10:00 AM - 8:00PM</p>
+//                   <p className="text-base text-[#858587] font-semibold">Saturday: 10:00 AM - 8:00PM</p>
 //                 </div>
 //                 <div className="bg-[#fdf0f0] rounded-xl p-4 border">
 //                   <p className="text-base text-[#e33f3f] font-semibold">Sunday: Closed</p>
 //                 </div>
-//                 <div className="bg-[rgba(108,201,62,0.1)] rounded-xl p-4 mt-14">
+//                 <div className="bg-[rgba(108,201,62,0.1)] rounded-xl p-4 mt-13">
 //                   <p className="text-sm text-black">
 //                     <span className="font-bold text-[#6cc93e]">Emergency Support:</span><br />
 //                     Available 24/7 critical system issues and urgent service requirements.
@@ -269,8 +261,8 @@ export function ContactPage(){
 //             {/* Location Map Card */}
 //             <div className="lg:col-span-2 bg-[rgba(236,236,236,0.9)] rounded-2xl overflow-hidden">
 //               <div className="bg-[#6cc93e] p-6 flex items-center gap-4">
-//                 <div className="bg-[rgba(254,205,63,0.5)] rounded-full p-4">
-//                   <MapPin className="w-8 h-8 text-white" />
+//                 <div className="bg-[#fecd3f] rounded-full p-4">
+//                   <MapPin className="w-8 h-8 text-[#333]" />
 //                 </div>
 //                 <div>
 //                   <h3 className="text-xl font-bold text-white">JKBN Enterprisers</h3>
@@ -279,9 +271,9 @@ export function ContactPage(){
 //               </div>
               
 //               {/* Google Maps Embed */}
-//               <div className="relative h-96 bg-gray-200 border">
+//               <div className="relative h-96 bg-gray-200 b order">
 //                 <iframe
-//                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.8!2d80.1060!3d12.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f5c5e8d9ee1:0xb7623a68579d4546!2sJkbn!5e0!3m2!1sen!2sin!4v1234567890"
+//                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.2330642317283!2d80.1063361!3d12.9120755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f5c5e8d9ee1%3A0xb7623a68579d4546!2sJkbn!5e0!3m2!1sen!2sin!4v1773406061598!5m2!1sen!2sin"
 //                   width="100%"
 //                   height="100%"
 //                   style={{ border: 0 }}
@@ -296,6 +288,7 @@ export function ContactPage(){
 //         </div>
 //       </section>
 
+      
 //     </div>
 //   );
 // }
