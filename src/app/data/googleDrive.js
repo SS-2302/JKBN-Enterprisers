@@ -22,8 +22,8 @@
 
 
 const GOOGLE_DRIVE_CONFIG = {
-  FOLDER_ID: '1VZnx8FztnbwK62Inx33xUB5c_ZlF4uSd',
-  API_KEY: 'AIzaSyACvIVP_rxCv2ojUhsGkwXzt4YdGfv3BDY',
+  FOLDER_ID: '',
+  API_KEY: '',
 };
 
 /**
