@@ -9,7 +9,7 @@ export function Hero() {
   };
 
   const handleCallNow = () => {
-    href = 'tel:+917305505705';
+    href = 'tel:+9876543210';
   };
 
   return (
