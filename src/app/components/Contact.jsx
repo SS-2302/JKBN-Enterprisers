@@ -13,15 +13,15 @@ export function Contact() {
   };
   
   const handleWhatsApp = () => {
-    window.open('https://wa.me/7305505705', '_blank');
+    window.open('https://wa.me/9876543210', '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+917305505705';
+    window.location.href = 'tel:+9876543210';
   };
 
   const handleEmail = () => {
-    window.location.href = 'mailto:jkbn2019@gmail.com';
+    window.location.href = 'mailto:jkbnenterprisers@gmail.com';
   };
 
   return (
@@ -60,7 +60,7 @@ export function Contact() {
                 </div>
                 <div className="text-left">
                   <div className="text-white font-bold mb-1">Email US</div>
-                  <div className="text-sm text-gray-300 cursor-pointer">jkbn2019@gmail.com</div>
+                  <div className="text-sm text-gray-300 cursor-pointer">jkbnenterprisers@gmail.com</div>
                 </div>
               </div>
             </button>
@@ -76,7 +76,7 @@ export function Contact() {
                 </div>
                 <div className="text-left">
                   <div className="text-white font-bold mb-1">Call US</div>
-                  <div className="text-sm text-gray-300 cursor-pointer">+91 7305505705</div>
+                  <div className="text-sm text-gray-300 cursor-pointer">+91 9876543210</div>
                 </div>
               </div>
             </button>
